@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Food El Hadded</title>
+  <meta name="description" content="Fast Food El Hadded - Sandwichs, chapati, mlawi et plus. Cuisine rapide et savoureuse.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="brand">
+        <img src="assets/logo.jpg" alt="Logo Fast Food El Hadded" class="brand__logo">
+        <span class="brand__name">Fast Food El Hadded</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#accueil"    data-fr="Accueil"     data-ar="الرئيسية">Accueil</a>
+        <a href="#menu"       data-fr="Menu"        data-ar="القائمة">Menu</a>
+        <a href="#boissons"   data-fr="Boissons"    data-ar="المشروبات">Boissons</a>
+        <a href="#supplements" data-fr="Suppléments" data-ar="الإضافات">Suppléments</a>
+        <a href="#galerie"    data-fr="Galerie"     data-ar="الصور">Galerie</a>
+        <a href="#apropos"    data-fr="À propos"    data-ar="من نحن">À propos</a>
+        <a href="#contact"    data-fr="Contact"     data-ar="اتصل بنا">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">
+          <span class="lang-toggle__opt is-active" data-lang="fr">FR</span>
+          <span class="lang-toggle__sep">/</span>
+          <span class="lang-toggle__opt" data-lang="ar">ع</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <img src="assets/logo.jpg" alt="Logo Fast Food El Hadded" class="hero__logo">
+      <h1 class="hero__title">Fast Food El Hadded</h1>
+      <p class="hero__slogan"
+         data-fr="Le goût authentique du fast-food, préparé avec passion."
+         data-ar="المذاق الأصيل للوجبات السريعة، محضّر بشغف.">
+        Le goût authentique du fast-food, préparé avec passion.
+      </p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--primary" data-fr="Voir le menu" data-ar="تصفّح القائمة">Voir le menu</a>
+        <a href="#contact" class="btn btn--ghost" data-fr="Nous contacter" data-ar="اتصل بنا">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU / PLATS -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker" data-fr="Notre carte" data-ar="قائمتنا">Notre carte</span>
+        <h2 class="section__title" data-fr="Nos Plats" data-ar="أطباقنا">Nos Plats</h2>
+        <p class="section__lead"
+           data-fr="Sandwichs, chapati et mlawi préparés à la commande."
+           data-ar="ساندويتشات، شباتي وملوي محضّرة عند الطلب.">
+          Sandwichs, chapati et mlawi préparés à la commande.
+        </p>
+      </div>
+      <div class="grid grid--cards" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- BOISSONS -->
+  <section class="section section--alt" id="boissons">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker" data-fr="Pour accompagner" data-ar="للمرافقة">Pour accompagner</span>
+        <h2 class="section__title" data-fr="Boissons" data-ar="المشروبات">Boissons</h2>
+      </div>
+      <div class="drinks" id="drinksList"></div>
+    </div>
+  </section>
+
+  <!-- SUPPLEMENTS -->
+  <section class="section" id="supplements">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker" data-fr="Personnalisez" data-ar="خصّص طلبك">Personnalisez</span>
+        <h2 class="section__title" data-fr="Suppléments" data-ar="الإضافات">Suppléments</h2>
+      </div>
+      <div class="grid grid--sup" id="extraGrid"></div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section section--alt" id="galerie">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker" data-fr="En images" data-ar="بالصور">En images</span>
+        <h2 class="section__title" data-fr="Galerie" data-ar="معرض الصور">Galerie</h2>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="section" id="apropos">
+    <div class="container about">
+      <div class="about__media">
+        <img src="assets/chapati.jpg" alt="Chapati El Hadded">
+        <img src="assets/mlawi.jpg" alt="Mlawi El Hadded">
+      </div>
+      <div class="about__text">
+        <span class="section__kicker" data-fr="Notre histoire" data-ar="قصتنا">Notre histoire</span>
+        <h2 class="section__title" data-fr="À propos de nous" data-ar="من نحن">À propos de nous</h2>
+        <p data-fr="Chez Fast Food El Hadded, nous préparons chaque plat à la commande avec des produits frais et une touche maison. Sandwichs généreux, chapati, mlawi et notre fameuse offre Wahchi : il y en a pour toutes les envies."
+           data-ar="في فاست فود الحداد، نُحضّر كل طبق عند الطلب بمكوّنات طازجة ولمسة منزلية. ساندويتشات سخية، شباتي، ملوي وعرضنا الشهير «وحشي»: لكل الأذواق.">
+          Chez Fast Food El Hadded, nous préparons chaque plat à la commande avec des produits frais et une touche maison.
+        </p>
+        <ul class="about__points">
+          <li data-fr="Produits frais du jour" data-ar="مكوّنات طازجة يوميًا">Produits frais du jour</li>
+          <li data-fr="Préparation à la commande" data-ar="تحضير عند الطلب">Préparation à la commande</li>
+          <li data-fr="Portions généreuses" data-ar="حصص سخية">Portions généreuses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker" data-fr="Venez nous voir" data-ar="زورونا">Venez nous voir</span>
+        <h2 class="section__title" data-fr="Contact & Localisation" data-ar="الاتصال والموقع">Contact & Localisation</h2>
+      </div>
+      <div class="contact">
+        <div class="contact__card">
+          <h3 data-fr="Adresse" data-ar="العنوان">Adresse</h3>
+          <p><a href="https://maps.app.goo.gl/KN2T1WCyxgZykeYv7" target="_blank" rel="noopener" data-fr="Voir l'emplacement sur Google Maps" data-ar="عرض الموقع على خرائط جوجل">Voir l'emplacement sur Google Maps</a></p>
+        </div>
+        <div class="contact__card">
+          <h3 data-fr="Téléphone" data-ar="الهاتف">Téléphone</h3>
+          <p><a href="tel:+21640689206">+216 40 689 206</a></p>
+        </div>
+        <div class="contact__card">
+          <h3 data-fr="Horaires" data-ar="أوقات العمل">Horaires</h3>
+          <p data-fr="Tous les jours : 6h00 - 22h00" data-ar="كل يوم: 06:00 - 22:00">Tous les jours : 6h00 - 22h00</p>
+        </div>
+        <div class="contact__card">
+          <h3 data-fr="Suivez-nous" data-ar="تابعونا">Suivez-nous</h3>
+          <p><a href="https://www.facebook.com/profile.php?id=61565328542325&mibextid=LQQJ4d" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          title="Carte Fast Food El Hadded"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=11.0964546%2C33.5006624%2C11.1164546%2C33.5206624&layer=mapnik&marker=33.5106624%2C11.1064546"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.jpg" alt="Logo" class="footer__logo">
+        <span>Fast Food El Hadded</span>
+      </div>
+      <p class="footer__note" data-fr="&copy; 2026 Fast Food El Hadded. Tous droits réservés." data-ar="&copy; 2026 فاست فود الحداد. جميع الحقوق محفوظة.">
+        &copy; 2026 Fast Food El Hadded. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
